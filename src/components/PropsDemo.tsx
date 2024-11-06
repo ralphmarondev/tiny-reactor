@@ -1,13 +1,16 @@
 interface Props {
   title: string
-  description: string
+  description?: string // note: its needs the ? to make it optional and allow default. :>
 }
 
-function PropsDemo(props: Props) {
+function PropsDemo({
+  title,
+  description = 'This is the default description',
+}: Props) {
   return (
     <div>
-      <p>Title: {props.title}</p>
-      <p>Description: {props.description}</p>
+      <p>Title: {title}</p>
+      <p>Description: {description}</p>
     </div>
   )
 }
