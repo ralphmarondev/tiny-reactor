@@ -1,11 +1,16 @@
-import MyButton from './components/MyButton'
+import Food from './components/Food'
+import Footer from './components/Footer'
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>
-      <MyButton title="I'm a disabled button" disabled={true}></MyButton>
-      <MyButton title="I'm not a disabled button" disabled={false}></MyButton>
-    </div>
+    <>
+      <div className='container mt-3'>
+        <Header />
+        <Food />
+        <Footer />
+      </div>
+    </>
   )
 }
 
