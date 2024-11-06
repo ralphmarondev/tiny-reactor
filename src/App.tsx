@@ -1,9 +1,9 @@
-import ConditionalRendering from './components/ConditionalRendering'
+import RenderingList from './components/RenderingList'
 
 function App() {
   return (
     <>
-      <ConditionalRendering username='ralphmaron' isLoggedIn={true} />
+      <RenderingList />
     </>
   )
 }
