@@ -1,13 +1,9 @@
-import PropsDemo from './components/PropsDemo'
+import ConditionalRendering from './components/ConditionalRendering'
 
 function App() {
   return (
     <>
-      <PropsDemo
-        title='Hello World'
-        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, libero?'
-      />
-      <PropsDemo title='Hello World' />
+      <ConditionalRendering username='ralphmaron' isLoggedIn={true} />
     </>
   )
 }
