@@ -1,9 +1,12 @@
-import Card from './components/Card'
+import PropsDemo from './components/PropsDemo'
 
 function App() {
   return (
     <>
-      <Card />
+      <PropsDemo
+        title='Hello World'
+        description='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, libero?'
+      />
     </>
   )
 }
